@@ -1,0 +1,188 @@
+:root{
+    --teal:#007d7b;
+    --black:#000000;
+    --white:#ffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: var(--black);
+}
+body{
+    width:1300px;
+    margin:0 auto;
+    background-color: var(--white);
+}
+
+h1{
+    text-transform: uppercase;
+    color: var(--teal);
+    margin:0 auto;
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav{
+    background-color: var(--black);
+    color:var(--white);
+    text-transform: uppercase;
+    text-align: right;
+}
+nav h2{
+    display: none;
+}
+nav li{
+    display: inline-flex;
+    padding: 10px;
+    margin: 10px 0;
+}
+nav a{
+    text-decoration: none;
+    color:var(--white);
+    font-size: 1.5em;
+}
+[href="#top"]{
+    position: fixed;
+    border: solid var(--white);
+    padding:10px;
+    border-radius: 25px;
+    bottom:5px;
+    background-color: var(--black);
+}
+p {
+    font-size: 1.25em;
+    padding: 10px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+div{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+img{
+    width: 422px;
+    height:auto;
+    padding:5px;
+}
+figure{
+    margin:0;
+}
+figcaption{
+    text-transform: uppercase;
+    text-align: center;
+    position:relative;
+    top: -270px;
+}
+.chile, .guatemala, .hawaii, .moab, .wyoming{
+    color:var(--white);
+}
+.iran figcaption, .ireland figcaption{
+    position:relative;
+    top: -620px;
+}
+.italy figcaption, .chile figcaption, .hawaii figcaption, .moab figcaption{
+    position: relative;
+    top: -40px;
+}
+.contact, footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:10px;
+}
+[value], footer{
+    text-transform: uppercase;
+}
+[value]{
+    color:var(--teal);
+}
+form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap:.5rem;
+    margin-left: 200px;
+}
+label{
+    text-transform: uppercase;
+    display: inline-flex;
+}
+input{
+    padding: 5px;
+    width: 900px;
+}
+[type="submit"]{
+    background-color: var(--teal);
+    border-radius: 2pc;
+    width: 25rem;
+    justify-self:center;
+    padding: 10px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+[type="submit"]:hover{
+    border: solid var(--white);
+}
+@media (max-width:880px){
+    body{
+        width: 700px;
+    }
+    nav{
+        text-align: center;
+    }
+    div{
+        display:grid;
+        width:300px;
+        grid-template-columns:1fr 1fr;
+    }
+    img{
+        width:340px;
+    }
+    figcaption{
+        position:relative;
+        top: -220px;
+    }
+    .iran figcaption, .ireland figcaption{
+        position:relative;
+        top: -500px;
+    }
+    input{
+        padding: 5px;
+        width: 500px;
+    }
+    form{
+        margin-left: 100px;
+    }
+}
+@media (max-width:485px){
+    body{
+        width: 400px;
+    }
+    div{
+        display:grid;
+        width:200px;
+        grid-template-columns:1fr;
+    }
+    img{
+        width:370px;
+    }
+    figcaption{
+        position:relative;
+        top: -240px;
+    }
+    .iran figcaption, .ireland figcaption{
+        position:relative;
+        top: -550px;
+    }
+    input{
+        padding: 5px;
+        width: 300px;
+    }
+    form{
+        margin-left: 30px;
+    }
+}
