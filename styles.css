@@ -165,7 +165,7 @@ input{
         width:20rem;
     }
 }
-@media (max-width:585px){
+@media (max-width:485px){
     body{
         width: 400px;
     }
